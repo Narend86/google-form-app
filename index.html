@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Google Form</h1>
+
+  <div class="field-container">
+    <label for="fieldLabel">Field Label: </label>
+    <input type="text" id="fieldLabel" placeholder="Enter field label">
+    
+    <label for="fieldType">Field Type: </label>
+    <select id="fieldType">
+      <option value="text">Text</option>
+      <option value="multiple-choice">Multiple Choice</option>
+      <option value="checkbox">Checkbox</option>
+    </select>
+    
+    <button id="addFieldButton">Add Field</button>
+  </div>
+
+  <div id="formPreview" ></div>
+
+  <div class="list-container">
+    <h2>Form List</h2>
+    <ul id="formList"></ul>
+  </div>
+
+  <script src="src/form-builder.js"></script>
+</body>
+</html>

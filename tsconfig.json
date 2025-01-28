@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "ES6", // or "ES5" if you're supporting older browsers
+      "module": "ESNext", // Ensure you're using a module system like ESNext
+      "moduleResolution": "node", // Use Node module resolution strategy
+      "strict": true, // Enable strict type checking
+      "esModuleInterop": true, // Allow importing CommonJS modules
+      "skipLibCheck": true, // Skip type checking for declaration files
+      "outDir": "./dist", // Output directory for compiled files
+      "baseUrl": ".", // Set the base directory
+      "paths": {
+        "*": ["node_modules/*", "src/*"]
+      }
+    },
+    "include": ["src/**/*.ts"], // Include all TypeScript files in the src folder
+    "exclude": ["node_modules"] // Exclude node_modules
+  }
+  

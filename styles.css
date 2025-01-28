@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.field-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+input, select, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%; /* Make input and button elements take full width */
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#fieldLabel {
+  width: 100%; /* Ensure label fields take full width */
+}
+
+#fieldType {
+  width: 100%; /* Make dropdown select take full width */
+}
+
+/* Form Preview */
+#formPreview {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#formPreview div {
+  margin-bottom: 10px;
+}
+
+#formPreview label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="radio"], input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+#formList {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  body {
+    margin: 10px; /* Reduce body margin for mobile */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller heading for mobile */
+  }
+
+  #fieldLabel, #fieldType, #addFieldButton {
+    width: 100%; /* Ensure inputs and buttons are full width */
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%; /* Button takes full width */
+    font-size: 16px; /* Larger font size for mobile buttons */
+  }
+
+  #formPreview {
+    padding: 15px; /* Slightly smaller padding on mobile */
+  }
+
+  #formPreview div {
+    margin-bottom: 15px; /* Add more space between elements */
+  }
+  .field-container{
+    flex-direction: column;
+  }
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 900px) {
+  body {
+    margin: 20px; /* Slightly larger margin for tablet */
+  }
+
+  #fieldLabel, #fieldType {
+    width: 100%; /* Full width for inputs */
+  }
+
+  button {
+    width: 100%; /* Full width for buttons */
+  }
+}
+
+/* Desktop Responsiveness */
+@media screen and (min-width: 901px) {
+  body {
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+
+  #formPreview {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #fieldLabel, #fieldType {
+    width: auto; /* Reset width on large screens */
+  }
+
+  button {
+    width: auto; /* Reset button width on larger screens */
+  }
+}
